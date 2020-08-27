@@ -1,0 +1,493 @@
+myHadoop: Setting MH_IPOIB_TRANSFORM='s/\([^.]*\).*$/\1.ibnet/' from myhadoop.conf
+myHadoop: Setting MH_SCRATCH_DIR=/scratch/$USER/$SLURM_JOBID from myhadoop.conf
+myHadoop: Using HADOOP_HOME=/opt/hadoop/2.6.0
+myHadoop: Using MH_SCRATCH_DIR=/scratch/sxv5264/32395700
+myHadoop: Using JAVA_HOME=/lib/jvm/java
+myHadoop: Generating Hadoop configuration in directory in /home/sxv5264/cometcluster...
+myHadoop: Backing up old config dir to /home/sxv5264/cometcluster.5...
+‘/home/sxv5264/cometcluster’ -> ‘/home/sxv5264/cometcluster.5’
+myHadoop: Designating comet-28-12.ibnet as master node (namenode, secondary namenode, and jobtracker)
+myHadoop: The following nodes will be slaves (datanode, tasktracer):
+comet-28-12.ibnet
+comet-28-17.ibnet
+20/04/02 20:49:26 INFO namenode.NameNode: STARTUP_MSG:
+/************************************************************
+STARTUP_MSG: Starting NameNode
+STARTUP_MSG:   host = comet-28-12.sdsc.edu/198.202.119.211
+STARTUP_MSG:   args = [-format]
+STARTUP_MSG:   version = 2.6.0
+STARTUP_MSG:   classpath = /home/sxv5264/cometcluster:/opt/hadoop/2.6.0/share/hadoop/common/lib/commons-cli-1.2.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/api-asn1-api-1.0.0-M20.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/jackson-core-asl-1.9.13.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/jaxb-api-2.2.2.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/jetty-6.1.26.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/commons-codec-1.4.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/servlet-api-2.5.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/log4j-1.2.17.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/xz-1.0.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/slf4j-api-1.7.5.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/commons-lang-2.6.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/jettison-1.1.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/junit-4.11.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/jsch-0.1.42.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/jasper-compiler-5.5.23.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/jersey-core-1.9.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/commons-httpclient-3.1.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/jackson-jaxrs-1.9.13.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/zookeeper-3.4.6.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/apacheds-kerberos-codec-2.0.0-M15.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/jets3t-0.9.0.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/guava-11.0.2.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/java-xmlbuilder-0.4.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/jackson-xc-1.9.13.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/avro-1.7.4.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/commons-digester-1.8.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/jasper-runtime-5.5.23.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/jersey-server-1.9.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/commons-compress-1.4.1.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/curator-client-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/jaxb-impl-2.2.3-1.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/jetty-util-6.1.26.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/hamcrest-core-1.3.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/asm-3.2.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/activation-1.1.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/paranamer-2.3.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/htrace-core-3.0.4.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/jsp-api-2.1.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/commons-logging-1.1.3.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/mockito-all-1.8.5.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/api-util-1.0.0-M20.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/snappy-java-1.0.4.1.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/jersey-json-1.9.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/curator-framework-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/curator-recipes-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/apacheds-i18n-2.0.0-M15.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/slf4j-log4j12-1.7.5.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/commons-beanutils-1.7.0.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/xmlenc-0.52.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/jsr305-1.3.9.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/hadoop-annotations-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/gson-2.2.4.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/protobuf-java-2.5.0.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/stax-api-1.0-2.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/jackson-mapper-asl-1.9.13.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/commons-configuration-1.6.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/netty-3.6.2.Final.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/commons-collections-3.2.1.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/hadoop-auth-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/httpclient-4.2.5.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/commons-net-3.1.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/commons-io-2.4.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/httpcore-4.2.5.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/commons-math3-3.1.1.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/commons-el-1.0.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/commons-beanutils-core-1.8.0.jar:/opt/hadoop/2.6.0/share/hadoop/common/hadoop-common-2.6.0-tests.jar:/opt/hadoop/2.6.0/share/hadoop/common/hadoop-nfs-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/common/hadoop-common-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/commons-cli-1.2.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/jackson-core-asl-1.9.13.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/jetty-6.1.26.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/commons-codec-1.4.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/servlet-api-2.5.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/log4j-1.2.17.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/xercesImpl-2.9.1.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/commons-lang-2.6.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/jersey-core-1.9.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/guava-11.0.2.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/jasper-runtime-5.5.23.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/jersey-server-1.9.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/jetty-util-6.1.26.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/asm-3.2.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/htrace-core-3.0.4.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/commons-daemon-1.0.13.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/jsp-api-2.1.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/commons-logging-1.1.3.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/xmlenc-0.52.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/jsr305-1.3.9.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/protobuf-java-2.5.0.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/jackson-mapper-asl-1.9.13.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/netty-3.6.2.Final.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/commons-io-2.4.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/commons-el-1.0.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/xml-apis-1.3.04.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/hadoop-hdfs-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/hadoop-hdfs-2.6.0-tests.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/hadoop-hdfs-nfs-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/commons-cli-1.2.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/jackson-core-asl-1.9.13.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/jaxb-api-2.2.2.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/jetty-6.1.26.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/commons-codec-1.4.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/servlet-api-2.5.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/log4j-1.2.17.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/jersey-guice-1.9.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/leveldbjni-all-1.8.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/xz-1.0.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/commons-lang-2.6.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/jettison-1.1.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/guice-servlet-3.0.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/jersey-core-1.9.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/commons-httpclient-3.1.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/jackson-jaxrs-1.9.13.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/zookeeper-3.4.6.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/guava-11.0.2.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/jackson-xc-1.9.13.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/jersey-server-1.9.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/commons-compress-1.4.1.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/jaxb-impl-2.2.3-1.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/jetty-util-6.1.26.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/guice-3.0.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/asm-3.2.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/activation-1.1.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/aopalliance-1.0.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/jline-0.9.94.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/commons-logging-1.1.3.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/jersey-json-1.9.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/jsr305-1.3.9.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/protobuf-java-2.5.0.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/stax-api-1.0-2.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/jackson-mapper-asl-1.9.13.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/netty-3.6.2.Final.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/commons-collections-3.2.1.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/javax.inject-1.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/commons-io-2.4.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/jersey-client-1.9.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/hadoop-yarn-applications-unmanaged-am-launcher-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/hadoop-yarn-common-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/hadoop-yarn-api-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/hadoop-yarn-server-resourcemanager-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/hadoop-yarn-server-nodemanager-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/hadoop-yarn-applications-distributedshell-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/hadoop-yarn-server-tests-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/hadoop-yarn-client-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/hadoop-yarn-server-common-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/hadoop-yarn-server-applicationhistoryservice-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/hadoop-yarn-server-web-proxy-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/hadoop-yarn-registry-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/jackson-core-asl-1.9.13.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/log4j-1.2.17.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/jersey-guice-1.9.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/leveldbjni-all-1.8.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/xz-1.0.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/junit-4.11.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/guice-servlet-3.0.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/jersey-core-1.9.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/avro-1.7.4.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/jersey-server-1.9.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/commons-compress-1.4.1.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/guice-3.0.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/hamcrest-core-1.3.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/asm-3.2.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/paranamer-2.3.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/aopalliance-1.0.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/snappy-java-1.0.4.1.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/hadoop-annotations-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/protobuf-java-2.5.0.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/jackson-mapper-asl-1.9.13.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/netty-3.6.2.Final.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/javax.inject-1.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/commons-io-2.4.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/hadoop-mapreduce-client-hs-plugins-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/hadoop-mapreduce-client-common-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/hadoop-mapreduce-client-app-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/hadoop-mapreduce-examples-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/hadoop-mapreduce-client-core-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/hadoop-mapreduce-client-hs-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/hadoop-mapreduce-client-jobclient-2.6.0-tests.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/hadoop-mapreduce-client-shuffle-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/hadoop-mapreduce-client-jobclient-2.6.0.jar:/opt/hadoop/2.6.0/contrib/capacity-scheduler/*.jar
+STARTUP_MSG:   build = https://git-wip-us.apache.org/repos/asf/hadoop.git -r e3496499ecb8d220fba99dc5ed4c99c8f9e33bb1; compiled by 'jenkins' on 2014-11-13T21:10Z
+STARTUP_MSG:   java = 1.8.0_212
+************************************************************/
+20/04/02 20:49:26 INFO namenode.NameNode: registered UNIX signal handlers for [TERM, HUP, INT]
+20/04/02 20:49:26 INFO namenode.NameNode: createNameNode [-format]
+20/04/02 20:49:26 WARN common.Util: Path /scratch/sxv5264/32395700/namenode_data should be specified as a URI in configuration files. Please update hdfs configuration.
+20/04/02 20:49:26 WARN common.Util: Path /scratch/sxv5264/32395700/namenode_data should be specified as a URI in configuration files. Please update hdfs configuration.
+Formatting using clusterid: CID-91cf2180-840e-40e1-bd9b-d1dc36ab0294
+20/04/02 20:49:27 INFO namenode.FSNamesystem: No KeyProvider found.
+20/04/02 20:49:27 INFO namenode.FSNamesystem: fsLock is fair:true
+20/04/02 20:49:27 INFO blockmanagement.DatanodeManager: dfs.block.invalidate.limit=1000
+20/04/02 20:49:27 INFO blockmanagement.DatanodeManager: dfs.namenode.datanode.registration.ip-hostname-check=true
+20/04/02 20:49:27 INFO blockmanagement.BlockManager: dfs.namenode.startup.delay.block.deletion.sec is set to 000:00:00:00.000
+20/04/02 20:49:27 INFO blockmanagement.BlockManager: The block deletion will start around 2020 Apr 02 20:49:27
+20/04/02 20:49:27 INFO util.GSet: Computing capacity for map BlocksMap
+20/04/02 20:49:27 INFO util.GSet: VM type       = 64-bit
+20/04/02 20:49:27 INFO util.GSet: 2.0% max memory 889 MB = 17.8 MB
+20/04/02 20:49:27 INFO util.GSet: capacity      = 2^21 = 2097152 entries
+20/04/02 20:49:27 INFO blockmanagement.BlockManager: dfs.block.access.token.enable=false
+20/04/02 20:49:27 INFO blockmanagement.BlockManager: defaultReplication         = 3
+20/04/02 20:49:27 INFO blockmanagement.BlockManager: maxReplication             = 512
+20/04/02 20:49:27 INFO blockmanagement.BlockManager: minReplication             = 1
+20/04/02 20:49:27 INFO blockmanagement.BlockManager: maxReplicationStreams      = 2
+20/04/02 20:49:27 INFO blockmanagement.BlockManager: shouldCheckForEnoughRacks  = false
+20/04/02 20:49:27 INFO blockmanagement.BlockManager: replicationRecheckInterval = 3000
+20/04/02 20:49:27 INFO blockmanagement.BlockManager: encryptDataTransfer        = false
+20/04/02 20:49:27 INFO blockmanagement.BlockManager: maxNumBlocksToLog          = 1000
+20/04/02 20:49:27 INFO namenode.FSNamesystem: fsOwner             = sxv5264 (auth:SIMPLE)
+20/04/02 20:49:27 INFO namenode.FSNamesystem: supergroup          = supergroup
+20/04/02 20:49:27 INFO namenode.FSNamesystem: isPermissionEnabled = true
+20/04/02 20:49:27 INFO namenode.FSNamesystem: HA Enabled: false
+20/04/02 20:49:27 INFO namenode.FSNamesystem: Append Enabled: true
+20/04/02 20:49:27 INFO util.GSet: Computing capacity for map INodeMap
+20/04/02 20:49:27 INFO util.GSet: VM type       = 64-bit
+20/04/02 20:49:27 INFO util.GSet: 1.0% max memory 889 MB = 8.9 MB
+20/04/02 20:49:27 INFO util.GSet: capacity      = 2^20 = 1048576 entries
+20/04/02 20:49:27 INFO namenode.NameNode: Caching file names occuring more than 10 times
+20/04/02 20:49:27 INFO util.GSet: Computing capacity for map cachedBlocks
+20/04/02 20:49:27 INFO util.GSet: VM type       = 64-bit
+20/04/02 20:49:27 INFO util.GSet: 0.25% max memory 889 MB = 2.2 MB
+20/04/02 20:49:27 INFO util.GSet: capacity      = 2^18 = 262144 entries
+20/04/02 20:49:27 INFO namenode.FSNamesystem: dfs.namenode.safemode.threshold-pct = 0.9990000128746033
+20/04/02 20:49:27 INFO namenode.FSNamesystem: dfs.namenode.safemode.min.datanodes = 0
+20/04/02 20:49:27 INFO namenode.FSNamesystem: dfs.namenode.safemode.extension     = 30000
+20/04/02 20:49:27 INFO namenode.FSNamesystem: Retry cache on namenode is enabled
+20/04/02 20:49:27 INFO namenode.FSNamesystem: Retry cache will use 0.03 of total heap and retry cache entry expiry time is 600000 millis
+20/04/02 20:49:27 INFO util.GSet: Computing capacity for map NameNodeRetryCache
+20/04/02 20:49:27 INFO util.GSet: VM type       = 64-bit
+20/04/02 20:49:27 INFO util.GSet: 0.029999999329447746% max memory 889 MB = 273.1 KB
+20/04/02 20:49:27 INFO util.GSet: capacity      = 2^15 = 32768 entries
+20/04/02 20:49:27 INFO namenode.NNConf: ACLs enabled? false
+20/04/02 20:49:27 INFO namenode.NNConf: XAttrs enabled? true
+20/04/02 20:49:27 INFO namenode.NNConf: Maximum size of an xattr: 16384
+20/04/02 20:49:27 INFO namenode.FSImage: Allocated new BlockPoolId: BP-2121769528-198.202.119.211-1585885767214
+20/04/02 20:49:27 INFO common.Storage: Storage directory /scratch/sxv5264/32395700/namenode_data has been successfully formatted.
+20/04/02 20:49:27 INFO namenode.NNStorageRetentionManager: Going to retain 1 images with txid >= 0
+20/04/02 20:49:27 INFO util.ExitUtil: Exiting with status 0
+20/04/02 20:49:27 INFO namenode.NameNode: SHUTDOWN_MSG:
+/************************************************************
+SHUTDOWN_MSG: Shutting down NameNode at comet-28-12.sdsc.edu/198.202.119.211
+************************************************************/
+myHadoop:
+myHadoop: Enabling experimental Spark support
+myHadoop: Using SPARK_CONF_DIR=/home/sxv5264/cometcluster/spark
+myHadoop:
+To use Spark, you will want to type the following commands:"
+  source /home/sxv5264/cometcluster/spark/spark-env.sh
+  myspark start
+Starting namenodes on [comet-16-07.ibnet]
+20/04/02 20:49:29 INFO namenode.NameNode: STARTUP_MSG:
+/************************************************************
+STARTUP_MSG: Starting NameNode
+STARTUP_MSG:   host = comet-16-07.sdsc.edu/198.202.117.12
+STARTUP_MSG:   args = [-format]
+STARTUP_MSG:   version = 2.6.0
+STARTUP_MSG:   classpath = /home/sxv5264/cometcluster:/opt/hadoop/2.6.0/share/hadoop/common/lib/activation-1.1.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/jasper-runtime-5.5.23.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/commons-net-3.1.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/jersey-json-1.9.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/jettison-1.1.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/slf4j-api-1.7.5.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/htrace-core-3.0.4.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/slf4j-log4j12-1.7.5.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/mockito-all-1.8.5.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/apacheds-kerberos-codec-2.0.0-M15.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/commons-collections-3.2.1.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/hadoop-auth-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/jetty-util-6.1.26.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/hadoop-annotations-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/guava-11.0.2.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/commons-beanutils-1.7.0.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/commons-cli-1.2.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/commons-httpclient-3.1.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/xz-1.0.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/commons-beanutils-core-1.8.0.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/gson-2.2.4.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/jackson-jaxrs-1.9.13.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/api-util-1.0.0-M20.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/jersey-server-1.9.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/protobuf-java-2.5.0.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/jets3t-0.9.0.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/zookeeper-3.4.6.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/api-asn1-api-1.0.0-M20.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/curator-recipes-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/commons-configuration-1.6.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/xmlenc-0.52.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/commons-el-1.0.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/curator-framework-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/jetty-6.1.26.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/jsch-0.1.42.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/jersey-core-1.9.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/jaxb-impl-2.2.3-1.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/jackson-mapper-asl-1.9.13.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/commons-io-2.4.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/java-xmlbuilder-0.4.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/curator-client-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/junit-4.11.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/httpcore-4.2.5.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/commons-digester-1.8.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/jackson-xc-1.9.13.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/apacheds-i18n-2.0.0-M15.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/jaxb-api-2.2.2.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/servlet-api-2.5.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/jsp-api-2.1.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/commons-lang-2.6.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/httpclient-4.2.5.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/jasper-compiler-5.5.23.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/commons-logging-1.1.3.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/jsr305-1.3.9.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/paranamer-2.3.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/snappy-java-1.0.4.1.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/netty-3.6.2.Final.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/avro-1.7.4.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/stax-api-1.0-2.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/jackson-core-asl-1.9.13.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/commons-compress-1.4.1.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/commons-codec-1.4.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/hamcrest-core-1.3.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/asm-3.2.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/log4j-1.2.17.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/commons-math3-3.1.1.jar:/opt/hadoop/2.6.0/share/hadoop/common/hadoop-nfs-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/common/hadoop-common-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/common/hadoop-common-2.6.0-tests.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/jasper-runtime-5.5.23.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/htrace-core-3.0.4.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/xercesImpl-2.9.1.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/jetty-util-6.1.26.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/guava-11.0.2.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/commons-cli-1.2.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/xml-apis-1.3.04.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/jersey-server-1.9.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/protobuf-java-2.5.0.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/commons-daemon-1.0.13.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/xmlenc-0.52.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/commons-el-1.0.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/jetty-6.1.26.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/jersey-core-1.9.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/jackson-mapper-asl-1.9.13.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/commons-io-2.4.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/servlet-api-2.5.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/jsp-api-2.1.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/commons-lang-2.6.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/commons-logging-1.1.3.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/jsr305-1.3.9.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/netty-3.6.2.Final.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/jackson-core-asl-1.9.13.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/commons-codec-1.4.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/asm-3.2.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/log4j-1.2.17.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/hadoop-hdfs-nfs-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/hadoop-hdfs-2.6.0-tests.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/hadoop-hdfs-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/activation-1.1.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/guice-3.0.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/jersey-json-1.9.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/javax.inject-1.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/jersey-client-1.9.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/jettison-1.1.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/commons-collections-3.2.1.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/jetty-util-6.1.26.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/guice-servlet-3.0.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/guava-11.0.2.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/commons-cli-1.2.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/commons-httpclient-3.1.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/xz-1.0.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/jackson-jaxrs-1.9.13.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/jersey-server-1.9.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/aopalliance-1.0.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/leveldbjni-all-1.8.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/protobuf-java-2.5.0.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/jersey-guice-1.9.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/zookeeper-3.4.6.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/jline-0.9.94.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/jetty-6.1.26.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/jersey-core-1.9.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/jaxb-impl-2.2.3-1.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/jackson-mapper-asl-1.9.13.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/commons-io-2.4.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/jackson-xc-1.9.13.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/jaxb-api-2.2.2.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/servlet-api-2.5.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/commons-lang-2.6.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/commons-logging-1.1.3.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/jsr305-1.3.9.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/netty-3.6.2.Final.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/stax-api-1.0-2.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/jackson-core-asl-1.9.13.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/commons-compress-1.4.1.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/commons-codec-1.4.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/asm-3.2.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/log4j-1.2.17.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/hadoop-yarn-applications-unmanaged-am-launcher-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/hadoop-yarn-api-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/hadoop-yarn-server-common-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/hadoop-yarn-registry-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/hadoop-yarn-server-web-proxy-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/hadoop-yarn-server-applicationhistoryservice-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/hadoop-yarn-applications-distributedshell-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/hadoop-yarn-server-tests-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/hadoop-yarn-client-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/hadoop-yarn-server-nodemanager-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/hadoop-yarn-common-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/hadoop-yarn-server-resourcemanager-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/guice-3.0.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/javax.inject-1.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/hadoop-annotations-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/guice-servlet-3.0.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/xz-1.0.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/jersey-server-1.9.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/aopalliance-1.0.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/leveldbjni-all-1.8.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/protobuf-java-2.5.0.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/jersey-guice-1.9.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/jersey-core-1.9.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/jackson-mapper-asl-1.9.13.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/commons-io-2.4.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/junit-4.11.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/paranamer-2.3.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/snappy-java-1.0.4.1.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/netty-3.6.2.Final.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/avro-1.7.4.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/jackson-core-asl-1.9.13.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/commons-compress-1.4.1.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/hamcrest-core-1.3.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/asm-3.2.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/log4j-1.2.17.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/hadoop-mapreduce-client-common-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/hadoop-mapreduce-examples-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/hadoop-mapreduce-client-app-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/hadoop-mapreduce-client-jobclient-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/hadoop-mapreduce-client-jobclient-2.6.0-tests.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/hadoop-mapreduce-client-hs-plugins-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/hadoop-mapreduce-client-shuffle-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/hadoop-mapreduce-client-hs-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/hadoop-mapreduce-client-core-2.6.0.jar:/opt/hadoop/2.6.0/contrib/capacity-scheduler/*.jar
+STARTUP_MSG:   build = https://git-wip-us.apache.org/repos/asf/hadoop.git -r e3496499ecb8d220fba99dc5ed4c99c8f9e33bb1; compiled by 'jenkins' on 2014-11-13T21:10Z
+STARTUP_MSG:   java = 1.8.0_212
+************************************************************/
+20/04/02 20:49:29 INFO namenode.NameNode: registered UNIX signal handlers for [TERM, HUP, INT]
+20/04/02 20:49:29 INFO namenode.NameNode: createNameNode [-format]
+20/04/02 20:49:30 WARN common.Util: Path /scratch/sxv5264/32395694/namenode_data should be specified as a URI in configuration files. Please update hdfs configuration.
+20/04/02 20:49:30 WARN common.Util: Path /scratch/sxv5264/32395694/namenode_data should be specified as a URI in configuration files. Please update hdfs configuration.
+Formatting using clusterid: CID-b476f6b5-b751-4727-bcc8-cc9c693e1c86
+20/04/02 20:49:30 INFO namenode.FSNamesystem: No KeyProvider found.
+20/04/02 20:49:30 INFO namenode.FSNamesystem: fsLock is fair:true
+20/04/02 20:49:30 INFO blockmanagement.DatanodeManager: dfs.block.invalidate.limit=1000
+20/04/02 20:49:30 INFO blockmanagement.DatanodeManager: dfs.namenode.datanode.registration.ip-hostname-check=true
+20/04/02 20:49:30 INFO blockmanagement.BlockManager: dfs.namenode.startup.delay.block.deletion.sec is set to 000:00:00:00.000
+20/04/02 20:49:30 INFO blockmanagement.BlockManager: The block deletion will start around 2020 Apr 02 20:49:30
+20/04/02 20:49:30 INFO util.GSet: Computing capacity for map BlocksMap
+20/04/02 20:49:30 INFO util.GSet: VM type       = 64-bit
+20/04/02 20:49:30 INFO util.GSet: 2.0% max memory 889 MB = 17.8 MB
+20/04/02 20:49:30 INFO util.GSet: capacity      = 2^21 = 2097152 entries
+20/04/02 20:49:30 INFO blockmanagement.BlockManager: dfs.block.access.token.enable=false
+20/04/02 20:49:30 INFO blockmanagement.BlockManager: defaultReplication         = 3
+20/04/02 20:49:30 INFO blockmanagement.BlockManager: maxReplication             = 512
+20/04/02 20:49:30 INFO blockmanagement.BlockManager: minReplication             = 1
+20/04/02 20:49:30 INFO blockmanagement.BlockManager: maxReplicationStreams      = 2
+20/04/02 20:49:30 INFO blockmanagement.BlockManager: shouldCheckForEnoughRacks  = false
+20/04/02 20:49:30 INFO blockmanagement.BlockManager: replicationRecheckInterval = 3000
+20/04/02 20:49:30 INFO blockmanagement.BlockManager: encryptDataTransfer        = false
+20/04/02 20:49:30 INFO blockmanagement.BlockManager: maxNumBlocksToLog          = 1000
+20/04/02 20:49:30 INFO namenode.FSNamesystem: fsOwner             = sxv5264 (auth:SIMPLE)
+20/04/02 20:49:30 INFO namenode.FSNamesystem: supergroup          = supergroup
+20/04/02 20:49:30 INFO namenode.FSNamesystem: isPermissionEnabled = true
+20/04/02 20:49:30 INFO namenode.FSNamesystem: HA Enabled: false
+20/04/02 20:49:30 INFO namenode.FSNamesystem: Append Enabled: true
+20/04/02 20:49:30 INFO util.GSet: Computing capacity for map INodeMap
+20/04/02 20:49:30 INFO util.GSet: VM type       = 64-bit
+20/04/02 20:49:30 INFO util.GSet: 1.0% max memory 889 MB = 8.9 MB
+20/04/02 20:49:30 INFO util.GSet: capacity      = 2^20 = 1048576 entries
+20/04/02 20:49:30 INFO namenode.NameNode: Caching file names occuring more than 10 times
+20/04/02 20:49:30 INFO util.GSet: Computing capacity for map cachedBlocks
+20/04/02 20:49:30 INFO util.GSet: VM type       = 64-bit
+20/04/02 20:49:30 INFO util.GSet: 0.25% max memory 889 MB = 2.2 MB
+20/04/02 20:49:30 INFO util.GSet: capacity      = 2^18 = 262144 entries
+20/04/02 20:49:30 INFO namenode.FSNamesystem: dfs.namenode.safemode.threshold-pct = 0.9990000128746033
+20/04/02 20:49:30 INFO namenode.FSNamesystem: dfs.namenode.safemode.min.datanodes = 0
+20/04/02 20:49:30 INFO namenode.FSNamesystem: dfs.namenode.safemode.extension     = 30000
+20/04/02 20:49:30 INFO namenode.FSNamesystem: Retry cache on namenode is enabled
+20/04/02 20:49:30 INFO namenode.FSNamesystem: Retry cache will use 0.03 of total heap and retry cache entry expiry time is 600000 millis
+20/04/02 20:49:30 INFO util.GSet: Computing capacity for map NameNodeRetryCache
+20/04/02 20:49:30 INFO util.GSet: VM type       = 64-bit
+20/04/02 20:49:30 INFO util.GSet: 0.029999999329447746% max memory 889 MB = 273.1 KB
+20/04/02 20:49:30 INFO util.GSet: capacity      = 2^15 = 32768 entries
+20/04/02 20:49:30 INFO namenode.NNConf: ACLs enabled? false
+20/04/02 20:49:30 INFO namenode.NNConf: XAttrs enabled? true
+20/04/02 20:49:30 INFO namenode.NNConf: Maximum size of an xattr: 16384
+20/04/02 20:49:30 INFO namenode.FSImage: Allocated new BlockPoolId: BP-692269669-198.202.117.12-1585885770254
+20/04/02 20:49:30 INFO common.Storage: Storage directory /scratch/sxv5264/32395694/namenode_data has been successfully formatted.
+20/04/02 20:49:30 INFO namenode.NNStorageRetentionManager: Going to retain 1 images with txid >= 0
+20/04/02 20:49:30 INFO util.ExitUtil: Exiting with status 0
+20/04/02 20:49:30 INFO namenode.NameNode: SHUTDOWN_MSG:
+/************************************************************
+SHUTDOWN_MSG: Shutting down NameNode at comet-16-07.sdsc.edu/198.202.117.12
+************************************************************/
+myHadoop:
+myHadoop: Enabling experimental Spark support
+myHadoop: Using SPARK_CONF_DIR=/home/sxv5264/cometcluster/spark
+myHadoop:
+To use Spark, you will want to type the following commands:"
+  source /home/sxv5264/cometcluster/spark/spark-env.sh
+  myspark start
+Starting namenodes on [comet-16-07.ibnet]
+comet-16-07.ibnet: namenode running as process 19349. Stop it first.
+                                                                                                                        comet-16-07.ibnet: starting datanode, logging to /scratch/sxv5264/32395694/logs/hadoop-sxv5264-datanode-comet-16-07.sdsc.edu.out
+comet-16-08.ibnet: starting datanode, logging to /scratch/sxv5264/32395694/logs/hadoop-sxv5264-datanode-comet-16-08.sdsc.edu.out
+Starting secondary namenodes [comet-16-07.ibnet]
+comet-16-07.ibnet: secondarynamenode running as process 20259. Stop it first.
+                                                                                                                        starting yarn daemons
+starting resourcemanager, logging to /scratch/sxv5264/32395694/logs/yarn-sxv5264-resourcemanager-comet-16-07.out
+starting yarn daemons
+mkdir: cannot create directory ‘/scratch/sxv5264/32395694’: Permission denied
+chown: cannot access ‘/scratch/sxv5264/32395694/logs’: No such file or directory
+mkdir: cannot create directory ‘/scratch/sxv5264/32395694’: Permission denied
+starting resourcemanager, logging to /scratch/sxv5264/32395694/logs/yarn-sxv5264-resourcemanager-comet-28-12.out
+/opt/hadoop/2.6.0/sbin/yarn-daemon.sh: line 125: /scratch/sxv5264/32395694/pids/yarn-sxv5264-resourcemanager.pid: No such file or directory
+/opt/hadoop/2.6.0/sbin/yarn-daemon.sh: line 124: /scratch/sxv5264/32395694/logs/yarn-sxv5264-resourcemanager-comet-28-12.out: No such file or directory
+head: cannot open ‘/scratch/sxv5264/32395694/logs/yarn-sxv5264-resourcemanager-comet-28-12.out’ for reading: No such file or directory
+/opt/hadoop/2.6.0/sbin/yarn-daemon.sh: line 129: /scratch/sxv5264/32395694/logs/yarn-sxv5264-resourcemanager-comet-28-12.out: No such file or directory
+/opt/hadoop/2.6.0/sbin/yarn-daemon.sh: line 130: /scratch/sxv5264/32395694/logs/yarn-sxv5264-resourcemanager-comet-28-12.out: No such file or directory
+comet-16-07.ibnet: nodemanager running as process 21139. Stop it first.
+comet-16-08.ibnet: nodemanager running as process 19343. Stop it first.
+mySpark: Using /home/sxv5264/cometcluster/spark/slaves as our slaves file
+mySpark: Reading in /home/sxv5264/cometcluster/spark/spark-env.sh as our slaves file
+mkdir: cannot create directory ‘/scratch/sxv5264/32395694’: Permission denied
+chown: cannot access ‘/scratch/sxv5264/32395694/logs’: No such file or directory
+starting org.apache.spark.deploy.master.Master, logging to /scratch/sxv5264/32395694/logs/spark-sxv5264-org.apache.spark.deploy.master.Master-1-comet-28-12.out
+/opt/spark/1.5.2/sbin/spark-daemon.sh: line 148: /scratch/sxv5264/32395694/logs/spark-sxv5264-org.apache.spark.deploy.master.Master-1-comet-28-12.out: No such file or directory
+failed to launch org.apache.spark.deploy.master.Master:
+                                                                                                                        tail: cannot open ‘/scratch/sxv5264/32395694/logs/spark-sxv5264-org.apache.spark.deploy.master.Master-1-comet-28-12.out’ for reading: No such file or directory
+full log in /scratch/sxv5264/32395694/logs/spark-sxv5264-org.apache.spark.deploy.master.Master-1-comet-28-12.out
+mySpark: Starting worker on comet-16-07.ibnet:
+  /opt/spark/1.5.2/sbin/spark-daemon.sh --config /home/sxv5264/cometcluster/spark start org.apache.spark.deploy.worker.Worker 1 spark://comet-16-07.ibnet:7077
+starting org.apache.spark.deploy.worker.Worker, logging to /scratch/sxv5264/32395694/logs/spark-sxv5264-org.apache.spark.deploy.worker.Worker-1-comet-16-07.sdsc.edu.out
+failed to launch org.apache.spark.deploy.worker.Worker:
+  /opt/spark/1.5.2/sbin/../bin/spark-class: line 77: /usr/java/latest/bin/java: No such file or directory
+full log in /scratch/sxv5264/32395694/logs/spark-sxv5264-org.apache.spark.deploy.worker.Worker-1-comet-16-07.sdsc.edu.out
+mySpark: Starting worker on comet-16-08.ibnet:
+  /opt/spark/1.5.2/sbin/spark-daemon.sh --config /home/sxv5264/cometcluster/spark start org.apache.spark.deploy.worker.Worker 1 spark://comet-16-07.ibnet:7077
+starting org.apache.spark.deploy.worker.Worker, logging to /scratch/sxv5264/32395694/logs/spark-sxv5264-org.apache.spark.deploy.worker.Worker-1-comet-16-08.sdsc.edu.out
+failed to launch org.apache.spark.depstarting org.apache.spark.deploy.worker.Worker, logging to /scratch/sxv5264/32395694/logs/spark-sxv5264-org.apache.spark.deploy.worker.Worker-1-comet-16-08.sdsc.edu.out
+failed to launch org.apache.spark.deploy.worker.Worker:
+  /opt/spark/1.5.2/sbin/../bin/spark-class: line 77: /usr/java/latest/bin/java: No such file or directory
+full log in /scratch/sxv5264/32395694/logs/spark-sxv5264-org.apache.spark.deploy.worker.Worker-1-comet-16-08.sdsc.edu.out
+20/04/02 20:49:51 WARN hdfs.DFSClient: DataStreamer Exception
+org.apache.hadoop.ipc.RemoteException(org.apache.hadoop.hdfs.server.namenode.LeaseExpiredException): No lease on /user/sxv5264/pixels-large.txt._COPYING_ (inode 16388): File does not exist. Holder DFSClient_NONMAPREDUCE_-407909145_1 does not have any open files.
+        at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.checkLease(FSNamesystem.java:3516)
+        at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.analyzeFileState(FSNamesystem.java:3313)
+        at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getAdditionalBlock(FSNamesystem.java:3169)
+        at org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.addBlock(NameNodeRpcServer.java:641)
+        at org.apache.hadoop.hdfs.protocolPB.ClientNamenodeProtocolServerSideTranslatorPB.addBlock(ClientNamenodeProtocolServerSideTranslatorPB.java:482)
+        at org.apache.hadoop.hdfs.protocol.proto.ClientNamenodeProtocolProtos$ClientNamenodeProtocol$2.callBlockingMethod(ClientNamenodeProtocolProtos.java)
+        at org.apache.hadoop.ipc.ProtobufRpcEngine$Server$ProtoBufRpcInvoker.call(ProtobufRpcEngine.java:619)
+        at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:962)
+        at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2039)
+        at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2035)
+        at java.security.AccessController.doPrivileged(Native Method)
+        at javax.security.auth.Subject.doAs(Subject.java:422)
+        at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1628)
+        at org.apache.hadoop.ipc.Server$Handler.run(Server.java:2033)
+
+        at org.apache.hadoop.ipc.Client.call(Client.java:1468)
+        at org.apache.hadoop.ipc.Client.call(Client.java:1399)
+        at org.apache.hadoop.ipc.ProtobufRpcEngine$Invoker.invoke(ProtobufRpcEngine.java:232)
+        at com.sun.proxy.$Proxy9.addBlock(Unknown Source)
+        at org.apache.hadoop.hdfs.protocolPB.ClientNamenodeProtocolTranslatorPB.addBlock(ClientNamenodeProtocolTranslatorPB.java:399)
+        at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+        at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+        at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+        at java.lang.reflect.Method.invoke(Method.java:498)
+        at org.apache.hadoop.io.retry.RetryInvocationHandler.invokeMethod(RetryInvocationHandler.java:187)
+        at org.apache.hadoop.io.retry.RetryInvocationHandler.invoke(RetryInvocationHandler.java:102)
+        at com.sun.proxy.$Proxy10.addBlock(Unknown Source)
+        at org.apache.hadoop.hdfs.DFSOutputStream$DataStreamer.locateFollowingBlock(DFSOutputStream.java:1532)
+        at org.apache.hadoop.hdfs.DFSOutputStream$DataStreamer.nextBlockOutputStream(DFSOutputStream.java:1349)
+        at org.apache.hadoop.hdfs.DFSOutputStream$DataStreamer.run(DFSOutputStream.java:588)
+put: No lease on /user/sxv5264/pixels-large.txt._COPYING_ (inode 16388): File does not exist. Holder DFSClient_NONMAPREDUCE_-407909145_1 does not have any open files.
+20/04/02 20:49:52 INFO spark.SparkContext: Running Spark version 1.5.2
+20/04/02 20:49:53 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+20/04/02 20:49:53 INFO spark.SecurityManager: Changing view acls to: sxv5264
+20/04/02 20:49:53 INFO spark.SecurityManager: Changing modify acls to: sxv5264
+20/04/02 20:49:53 INFO spark.SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users with view permissions: Set(sxv5264); users with modify permissions: Set(sxv5264)
+20/04/02 20:49:53 INFO slf4j.Slf4jLogger: Slf4jLogger started
+20/04/02 20:49:53 INFO Remoting: Starting remoting
+20/04/02 20:49:53 INFO Remoting: Remoting started; listening on addresses :[akka.tcp://sparkDriver@10.22.252.8:38906]
+20/04/02 20:49:53 INFO util.Utils: Successfully started service 'sparkDriver' on port 38906.
+20/04/02 20:49:53 INFO spark.SparkEnv: Registering MapOutputTracker
+20/04/02 20:49:53 INFO spark.SparkEnv: Registering BlockManagerMaster
+20/04/02 20:49:53 INFO storage.DiskBlockManager: Created local directory at /tmp/blockmgr-b5f2681e-e8e7-4c8f-baf8-b55c5c1dff29
+20/04/02 20:49:53 INFO storage.MemoryStore: MemoryStore started with capacity 530.0 MB
+20/04/02 20:49:53 INFO spark.HttpFileServer: HTTP File server directory is /tmp/spark-5f5ed431-8876-4156-a296-44f6453ac49a/httpd-91b84f91-96bd-4da1-92c0-d3e346e98cdb
+20/04/02 20:49:53 INFO spark.HttpServer: Starting HTTP Server
+20/04/02 20:49:53 INFO server.Server: jetty-8.y.z-SNAPSHOT
+20/04/02 20:49:53 INFO server.AbstractConnector: Started SocketConnector@0.0.0.0:36082
+20/04/02 20:49:53 INFO util.Utils: Successfully started service 'HTTP file server' on port 36082.
+20/04/02 20:49:53 INFO spark.SparkEnv: Registering OutputCommitCoordinator
+20/04/02 20:49:53 INFO server.Server: jetty-8.y.z-SNAPSHOT
+20/04/02 20:49:53 INFO server.AbstractConnector: Started SelectChannelConnector@0.0.0.0:4040
+20/04/02 20:49:53 INFO util.Utils: Successfully started service 'SparkUI' on port 4040.
+20/04/02 20:49:53 INFO ui.SparkUI: Started SparkUI at http://10.22.252.8:4040
+20/04/02 20:49:53 INFO spark.SparkContext: Added JAR file:/home/sxv5264/project4/histogram.jar at http://10.22.252.8:36082/jars/histogram.jar with timestamp 1585885793964
+20/04/02 20:49:54 WARN metrics.MetricsSystem: Using default name DAGScheduler for source because spark.app.id is not set.
+20/04/02 20:49:54 INFO client.AppClient$ClientEndpoint: Connecting to master spark://comet-16-07.ibnet:7077...
+20/04/02 20:49:54 INFO cluster.SparkDeploySchedulerBackend: Connected to Spark cluster with app ID app-20200402204954-0000
+20/04/02 20:49:54 INFO util.Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 43681.
+20/04/02 20:49:54 INFO netty.NettyBlockTransferService: Server created on 43681
+20/04/02 20:49:54 INFO storage.BlockManagerMaster: Trying to register BlockManager
+20/04/02 20:49:54 INFO storage.BlockManagerMasterEndpoint: Registering block manager 10.22.252.8:43681 with 530.0 MB RAM, BlockManagerId(driver, 10.22.252.8, 43681)
+20/04/02 20:49:54 INFO storage.BlockManagerMaster: Registered BlockManager
+20/04/02 20:49:54 INFO cluster.SparkDeploySchedulerBackend: SchedulerBackend is ready for scheduling beginning after reached minRegisteredResourcesRatio: 0.0
+20/04/02 20:49:54 INFO storage.MemoryStore: ensureFreeSpace(120176) called with curMem=0, maxMem=555755765
+20/04/02 20:49:54 INFO storage.MemoryStore: Block broadcast_0 stored as values in memory (estimated size 117.4 KB, free 529.9 MB)
+20/04/02 20:49:54 INFO storage.MemoryStore: ensureFreeSpace(12887) called with curMem=120176, maxMem=555755765
+20/04/02 20:49:54 INFO storage.MemoryStore: Block broadcast_0_piece0 stored as bytes in memory (estimated size 12.6 KB, free 529.9 MB)
+20/04/02 20:49:54 INFO storage.BlockManagerInfo: Added broadcast_0_piece0 in memory on 10.22.252.8:43681 (size: 12.6 KB, free: 530.0 MB)
+20/04/02 20:49:54 INFO spark.SparkContext: Created broadcast 0 from textFile at Histogram.scala:11
+Exception in thread "main" org.apache.hadoop.mapred.InvalidInputException: Input path does not exist: hdfs://comet-16-07.ibnet:54310/user/sxv5264/pixels-large.txt
+        at org.apache.hadoop.mapred.FileInputFormat.singleThreadedListStatus(FileInputFormat.java:285)
+        at org.apache.hadoop.mapred.FileInputFormat.listStatus(FileInputFormat.java:228)
+        at org.apache.hadoop.mapred.FileInputFormat.getSplits(FileInputFormat.java:304)
+        at org.apache.spark.rdd.HadoopRDD.getPartitions(HadoopRDD.scala:207)
+        at org.apache.spark.rdd.RDD$$anonfun$partitions$2.apply(RDD.scala:239)
+        at org.apache.spark.rdd.RDD$$anonfun$partitions$2.apply(RDD.scala:237)
+        at scala.Option.getOrElse(Option.scala:120)
+        at org.apache.spark.rdd.RDD.partitions(RDD.scala:237)
+        at org.apache.spark.rdd.MapPartitionsRDD.getPartitions(MapPartitionsRDD.scala:35)
+        at org.apache.spark.rdd.RDD$$anonfun$partitions$2.apply(RDD.scala:239)
+        at org.apache.spark.rdd.RDD$$anonfun$partitions$2.apply(RDD.scala:237)
+        at scala.Option.getOrElse(Option.scala:120)
+        at org.apache.spark.rdd.RDD.partitions(RDD.scala:237)
+        at org.apache.spark.rdd.MapPartitionsRDD.getPartitions(MapPartitionsRDD.scala:35)
+        at org.apap 1585885794870
+20/04/02 20:49:54 WARN metrics.MetricsSystem: Using default name DAGScheduler for source because spark.app.id is not set.
+20/04/02 20:49:54 INFO client.AppClient$ClientEndpoint: Connecting to master spark://comet-16-07.ibnet:7077...
+20/04/02 20:49:55 INFO cluster.SparkDeploySchedulerBackend: Connected to Spark cluster with app ID app-20200402204955-0001
+20/04/02 20:49:55 INFO util.Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 40711.
+20/04/02 20:49:55 INFO netty.NettyBlockTransferService: Server created on 40711
+20/04/02 20:49:55 INFO storage.BlockManagerMaster: Trying to register BlockManager
+20/04/02 20:49:55 INFO storage.BlockManagerMasterEndpoint: Registering block manager 10.22.248.235:40711 with 530.0 MB RAM, BlockManagerId(driver, 10.22.248.235, 40711)
+20/04/02 20:49:55 INFO storage.BlockManagerMaster: Registered BlockManager
+20/04/02 20:49:55 INFO cluster.SparkDeploySchedulerBackend: SchedulerBackend is ready for scheduling beginning after reached minRegisteredResourcesRatio: 0.0
+20/04/02 20:49:55 INFO storage.MemoryStore: ensureFreeSpace(120176) called with curMem=0, maxMem=555755765
+20/04/02 20:49:55 INFO storage.MemoryStore: Block broadcast_0 stored as values in memory (estimated size 117.4 KB, free 529.9 MB)
+20/04/02 20:49:55 INFO storage.MemoryStore: ensureFreeSpace(12887) called with curMem=120176, maxMem=555755765
+20/04/02 20:49:55 INFO storage.MemoryStore: Block broadcast_0_piece0 stored as bytes in memory (estimated size 12.6 KB, free 529.9 MB)
+20/04/02 20:49:55 INFO storage.BlockManagerInfo: Added broadcast_0_piece0 in memory on 10.22.248.235:40711 (size: 12.6 KB, free: 530.0 MB)
+20/04/02 20:49:55 INFO spark.SparkContext: Created broadcast 0 from textFile at Histogram.scala:11
+Exception in thread "main" org.apache.hadoop.mapred.InvalidInputException: Input path does not exist: hdfs://comet-16-07.ibnet:54310/user/sxv5264/pixels-large.txt
+        at org.apache.hadoop.mapred.FileInputFormat.singleThreadedListStatus(FileInputFormat.java:285)
+        at org.apache.hadoop.mapred.FileInputFormat.listStatus(FileInputFormat.java:228)
+        at org.apache.hadoop.mapred.FileInputFormat.getSplits(FileInputFormat.java:304)
+        at org.apache.spark.rdd.HadoopRDD.getPartitions(HadoopRDD.scala:207)
+        at org.apache.spark.rdd.RDD$$anonfun$partitions$2.apply(RDD.scala:239)
+        at org.apache.spark.rdd.RDD$$anonfun$partitions$2.apply(RDD.scala:237)
+        at scala.Option.getOrElse(Option.scala:120)
+        at org.apache.spark.rdd.RDD.partitions(RDD.scala:237)
+        at org.apache.spark.rdd.MapPartitionsRDD.getPartitions(MapPartitionsRDD.scala:35)
+        at org.apache.spark.rdd.RDD$$anonfun$partitions$2.apply(RDD.scala:239)
+        at org.apache.spark.rdd.RDD$$anonfun$partitions$2.apply(RDD.scala:237)
+        at scala.Option.getOrElse(Option.scala:120)
+        at org.apache.spark.rdd.RDD.partitions(RDD.scala:237)
+        at org.apache.spark.rdd.MapPartitionsRDD.getPartitions(MapPartitionsRDD.scala:35)
+        at org.apache.spark.rdd.RDD$$anonfun$partitions$2.apply(RDD.scala:239)
+        at org.apache.spark.rdd.RDD$$anonfun$partitions$2.apply(RDD.scala:237)
+        at scala.Option.getOrElse(Option.scala:120)
+        at org.apache.spark.rdd.RDD.partitions(RDD.scala:237)
+        at org.apache.spark.rdd.MapPartitionsRDD.getPartitions(MapPartitionsRDD.scala:35)
+        at org.apache.spark.rdd.RDD$$anonfun$partitions$2.apply(RDD.scala:239)
+        at org.apache.spark.rdd.RDD$$anonfun$partitions$2.apply(RDD.scala:237)
+        at scala.Option.getOrElse(Option.scala:120)
+        at org.apache.spark.rdd.RDD.partitions(RDD.scala:237)
+        at org.apache.spark.Partitioner$.defaultPartitioner(Partitioner.scala:65)
+        at org.apache.spark.rdd.PairRDDFunctions$$anonfun$reduceByKey$3.apply(PairRDDFunctions.scala:290)
+        at org.apache.spark.rdd.PairRDDFunctions$$anonfun$reduceByKey$3.apply(PairRDDFunctions.scala:290)
+        at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:147)
+        at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:108)
+        at org.apache.spark.rdd.RDD.withScope(RDD.scala:310)
+        at org.apache.spark.rdd.PairRDDFunctions.reduceByKey(PairRDDFunctions.scala:289)
+        at Histogram$.main(Histogram.scala:17)
+        at Histogram.main(Histogram.scala)
+        at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+        at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+        at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+        at java.lang.reflect.Method.invoke(Method.java:498)
+        at org.apache.spark.deploy.SparkSubmit$.org$apache$spark$deploy$SparkSubmit$$runMain(SparkSubmit.scala:674)
+        at org.apache.spark.deploy.SparkSubmit$.doRunMain$1(SparkSubmit.scala:180)
+        at org.apache.spark.deploy.SparkSubmit$.submit(SparkSubmit.scala:205)
+        at org.apache.spark.deploy.SparkSubmit$.main(SparkSubmit.scala:120)
+        at org.apache.spark.deploy.SparkSubmit.main(SparkSubmit.scala)
+20/04/02 20:49:55 INFO spark.SparkContext: Invoking stop() from shutdown hook
+20/04/02 20:49:55 INFO handler.ContextHandler: stopped o.s.j.s.ServletContextHandler{/metrics/json,null}
+20/04/02 20:49:55 INFO handler.ContextHandler: stopped o.s.j.s.ServletContextHandler{/stages/stage/kill,null}
+20/04/02 20:49:55 INFO handler.ContextHandler: stopped o.s.j.s.ServletContextHandler{/api,null}
+20/04/02 20:49:55 INFO handler.ContextHandler: stopped o.s.j.s.ServletContextHandler{/,null}
+20/04/02 20:49:55 INFO handler.ContextHandler: stopped o.s.j.s.ServletContextHandler{/static,null}
+20/04/02 20:49:55 INFO handler.ContextHandler: stopped o.s.j.s.ServletContextHandler{/executors/threadDump/json,null}
+20/04/02 20:49:55 INFO handler.ContextHandler: stopped o.s.j.s.ServletContextHandler{/executors/threadDump,null}
+20/04/02 20:49:55 INFO handler.ContextHandler: stopped o.s.j.s.ServletContextHandler{/executors/json,null}
+20/04/02 20:49:55 INFO handler.ContextHandler: stopped o.s.j.s.ServletContextHandler{/executors,null}
+20/04/02 20:49:55 INFO handler.ContextHandler: stopped o.s.j.s.ServletContextHandler{/environment/json,null}
+20/04/02 20:49:55 INFO handler.ContextHandler: stopped o.s.j.s.ServletContextHandler{/environment,null}
+20/04/02 20:49:55 INFO handler.ContextHandler: stopped o.s.j.s.ServletContextHandler{/storage/rdd/json,null}
+20/04/02 20:49:55 INFO handler.ContextHandler: stopped o.s.j.s.ServletContextHandler{/storage/rdd,null}
+20/04/02 20:49:55 INFO handler.ContextHandler: stopped o.s.j.s.ServletContextHandler{/storage/json,null}
+20/04/02 20:49:55 INFO handler.ContextHandler: stopped o.s.j.s.ServletContextHandler{/storage,null}
+20/04/02 20:49:55 INFO handler.ContextHandler: stopped o.s.j.s.ServletContextHandler{/stages/pool/json,null}
+20/04/02 20:49:55 INFO handler.ContextHandler: stopped o.s.j.s.ServletContextHandler{/stages/pool,null}
+20/04/02 20:49:55 INFO handler.ContextHandler: stopped o.s.j.s.ServletContextHandler{/stages/stage/json,null}
+20/04/02 20:49:55 INFO handler.ContextHandler: stopped o.s.j.s.ServletContextHandler{/stages/stage,null}
+20/04/02 20:49:55 INFO handler.ContextHandler: stopped o.s.j.s.ServletContextHandler{/stages/json,null}
+20/04/02 20:49:55 INFO handler.ContextHandler: stopped o.s.j.s.ServletContextHandler{/stages,null}
+20/04/02 20:49:55 INFO handler.ContextHandler: stopped o.s.j.s.ServletContextHandler{/jobs/job/json,null}
+20/04/02 20:49:55 INFO handler.ContextHandler: stopped o.s.j.s.ServletContextHandler{/jobs/job,null}
+20/04/02 20:49:55 INFO handler.ContextHandler: stopped o.s.j.s.ServletContextHandler{/jobs/json,null}
+20/04/02 20:49:55 INFO handler.ContextHandler: stopped o.s.j.s.ServletContextHandler{/jobs,null}
+20/04/02 20:49:56 INFO ui.SparkUI: Stopped Spark web UI at http://10.22.248.235:4040
+20/04/02 20:49:56 INFO scheduler.DAGScheduler: Stopping DAGScheduler
+20/04/02 20:49:56 INFO cluster.SparkDeploySchedulerBackend: Shutting down all executors
+20/04/02 20:49:56 INFO cluster.SparkDeploySchedulerBackend: Asking each executor to shut down
+20/04/02 20:49:56 INFO spark.MapOutputTrackerMasterEndpoint: MapOutputTrackerMasterEndpoint stopped!
+20/04/02 20:49:56 INFO storage.MemoryStore: MemoryStore cleared
+20/04/02 20:49:56 INFO storage.BlockManager: BlockManager stopped
+20/04/02 20:49:56 INFO storage.BlockManagerMaster: BlockManagerMaster stopped
+20/04/02 20:49:56 INFO scheduler.OutputCommitCoordinator$OutputCommitCoordinatorEndpoint: OutputCommitCoordinator stopped!
+20/04/02 20:49:56 INFO spark.SparkContext: Successfully stopped SparkContext
+20/04/02 20:49:56 INFO util.ShutdownHookManager: Shutdown hook called
+20/04/02 20:49:56 INFO util.ShutdownHookManager: Deleting directory /tmp/spark-79f1f1d4-e9fe-4922-8efe-a71e3ec889bd
+20/04/02 20:49:56 INFO remote.RemoteActorRefProvider$RemotingTerminator: Shutting down remote daemon.
+20/04/02 20:49:56 INFO remote.RemoteActorRefProvider$RemotingTerminator: Remote daemon shut down; proceeding with flushing remote transports.
+20/04/02 20:49:56 INFO remote.RemoteActorRefProvider$RemotingTerminator: Remoting shut down.
+stopping yarn daemons
+mkdir: cannot create directory ‘/scratch/sxv5264/32395694’: Permission denied
+chown: cannot access ‘/scratch/sxv5264/32395694/logs’: No such file or directory
+no resourcemanager to stop
+                                                                                                                        comet-16-07.ibnet: stopping nodemanager
+comet-16-08.ibnet: stopping nodemanager
+mkdir: cannot create directory ‘/scratch/sxv5264/32395694’: Permission denied
+chown: cannot access ‘/scratch/sxv5264/32395694/logs’: No such file or directory
+no proxyserver to stop
+Stopping namenodes on [comet-16-07.ibnet]
+comet-16-07.ibnet: no namenode to stop
+                                                                                                                   comet-16-07.ibnet: stopping datanode
+comet-16-08.ibnet: stopping datanode
+Stopping secondary namenodes [comet-16-07.ibnet]
+comet-16-07.ibnet: no secondarynamenode to stop
+Copying Hadoop logs back to /home/sxv5264/cometcluster/logs...
+cp: cannot stat ‘/scratch/sxv5264/32395694/logs’: No such file or directory
+removed directory: ‘/scratch/sxv5264/32395694/mapred_scratch/filecache’
+removed directory: ‘/scratch/sxv5264/32395694/mapred_scratch/usercache’
+removed directory: ‘/scratch/sxv5264/32395694/mapred_scratch/nmPrivate’
+removed directory: ‘/scratch/sxv5264/32395694/mapred_scratch’
+removed directory: ‘/scratch/sxv5264/32395694/tmp/dfs/namesecondary’
+removed directory: ‘/scratch/sxv5264/32395694/tmp/dfs’
+removed directory: ‘/scratch/sxv5264/32395694/tmp’
+removed ‘/scratch/sxv5264/32395694/namenode_data/current/edits_inprogress_0000000000000000001’
+removed ‘/scratch/sxv5264/32395694/namenode_data/current/VERSION’
+removed ‘/scratch/sxv5264/32395694/namenode_data/current/seen_txid’
+removed ‘/scratch/sxv5264/32395694/namenode_data/current/fsimage_0000000000000000000’
+removed ‘/scratch/sxv5264/32395694/namenode_data/current/fsimage_0000000000000000000.md5’
+removed directory: ‘/scratch/sxv5264/32395694/namenode_data/current’
+removed directory: ‘/scratch/sxv5264/32395694/namenode_data’
+removed ‘/scratch/sxv5264/32395694/hdfs_data/current/VERSION’
+removed ‘/scratch/sxv5264/32395694/hdfs_data/current/BP-692269669-198.202.117.12-1585885770254/dncp_block_verification.log.curr’
+removed ‘/scratch/sxv5264/32395694/hdfs_data/current/BP-692269669-198.202.117.12-1585885770254/current/dfsUsed’
+removed ‘/scratch/sxv5264/32395694/hdfs_data/current/BP-692269669-198.202.117.12-1585885770254/current/VERSION’
+removed directory: ‘/scratch/sxv5264/32395694/hdfs_data/current/BP-692269669-198.202.117.12-1585885770254/current/finalized/subdir0/subdir0’
+removed directory: ‘/scratch/sxv5264/32395694/hdfs_data/current/BP-692269669-198.202.117.12-1585885770254/current/finalized/subdir0’
+removed directory: ‘/scratch/sxv5264/32395694/hdfs_data/current/BP-692269669-198.202.117.12-1585885770254/current/finalized’
+removed directory: ‘/scratch/sxv5264/32395694/hdfs_data/current/BP-692269669-198.202.117.12-1585885770254/current/rbw’
+removed directory: ‘/scratch/sxv5264/32395694/hdfs_data/current/BP-692269669-198.202.117.12-1585885770254/current’
+removed directory: ‘/scratch/sxv5264/32395694/hdfs_data/current/BP-692269669-198.202.117.12-1585885770254/tmp’
+removed ‘/scratch/sxv5264/32395694/hdfs_data/current/BP-692269669-198.202.117.12-1585885770254/dncp_block_verification.log.prev’
+removed directory: ‘/scratch/sxv5264/32395694/hdfs_data/current/BP-692269669-198.202.117.12-1585885770254’
+removed directory: ‘/scratch/sxv5264/32395694/hdfs_data/current’
+removed directory: ‘/scratch/sxv5264/32395694/hdfs_data’
+removed directory: ‘/scratch/sxv5264/32395694/pids’
+removed ‘/scratch/sxv5264/32395694/logs/yarn-sxv5264-resourcemanager-comet-16-07.out’
+removed ‘/scratch/sxv5264/32395694/logs/hadoop-sxv5264-namenode-comet-16-07.sdsc.edu.log’
+removed ‘/scratch/sxv5264/32395694/logs/spark-sxv5264-org.apache.spark.deploy.master.Master-1-comet-16-07.out’
+removed directory: ‘/scratch/sxv5264/32395694/logs/userlogs’
+removed ‘/scratch/sxv5264/32395694/logs/hadoop-sxv5264-datanode-comet-16-07.sdsc.edu.log’
+removed ‘/scratch/sxv5264/32395694/logs/yarn-sxv5264-nodemanager-comet-16-07.sdsc.edu.out’
+removed ‘/scratch/sxv5264/32395694/logs/spark-sxv5264-org.apache.spark.deploy.worker.Worker-1-comet-16-07.sdsc.edu.out.1’
+removed ‘/scratch/sxv5264/32395694/logs/hadoop-sxv5264-secondarynamenode-comet-16-07.sdsc.edu.out’
+removed ‘/scratch/sxv5264/32395694/logs/SecurityAuth-sxv5264.audit’
+removed ‘/scratch/sxv5264/32395694/logs/yarn-sxv5264-nodemanager-comet-16-07.sdsc.edu.log’
+removed ‘/scratch/sxv5264/32395694/logs/hadoop-sxv5264-secondarynamenode-comet-16-07.sdsc.edu.log’
+removed ‘/scratch/sxv5264/32395694/logs/hadoop-sxv5264-datanode-comet-16-07.sdsc.edu.out’
+removed ‘/scratch/sxv5264/32395694/logs/spark-sxv5264-org.apache.spark.deploy.worker.Worker-1-comet-16-07.sdsc.edu.out’
+removed ‘/scratch/sxv5264/32395694/logs/yarn-sxv5264-resourcemanager-comet-16-07.log’
+removed ‘/scratch/sxv5264/32395694/logs/hadoop-sxv5264-namenode-comet-16-07.sdsc.edu.out’
+removed directory: ‘/scratch/sxv5264/32395694/logs’
+removed directory: ‘/scratch/sxv5264/32395694/mapred_scratch/usercache’
+removed directory: ‘/scratch/sxv5264/32395694/mapred_scratch/nmPrivate’
+removed directory: ‘/scratch/sxv5264/32395694/mapred_scratch/filecache’
+removed directory: ‘/scratch/sxv5264/32395694/mapred_scratch’
+removed directory: ‘/scratch/sxv5264/32395694/hdfs_data/current/BP-692269669-198.202.117.12-1585885770254/tmp’
+removed ‘/scratch/sxv5264/32395694/hdfs_data/current/BP-692269669-198.202.117.12-1585885770254/dncp_block_verification.log.prev’
+removed directory: ‘/scratch/sxv5264/32395694/hdfs_data/current/BP-692269669-198.202.117.12-1585885770254/current/finalized/subdir0/subdir0’
+removed directory: ‘/scratch/sxv5264/32395694/hdfs_data/current/BP-692269669-198.202.117.12-1585885770254/current/finalized/subdir0’
+removed directory: ‘/scratch/sxv5264/32395694/hdfs_data/current/BP-692269669-198.202.117.12-1585885770254/current/finalized’
+removed ‘/scratch/sxv5264/32395694/hdfs_data/current/BP-692269669-198.202.117.12-1585885770254/current/VERSION’
+removed directory: ‘/scratch/sxv5264/32395694/hdfs_data/current/BP-692269669-198.202.117.12-1585885770254/current/rbw’
+removed ‘/scratch/sxv5264/32395694/hdfs_data/current/BP-692269669-198.202.117.12-1585885770254/current/dfsUsed’
+removed directory: ‘/scratch/sxv5264/32395694/hdfs_data/current/BP-692269669-198.202.117.12-1585885770254/current’
+removed ‘/scratch/sxv5264/32395694/hdfs_data/current/BP-692269669-198.202.117.12-1585885770254/dncp_block_verification.log.curr’
+removed directory: ‘/scratch/sxv5264/32395694/hdfs_data/current/BP-692269669-198.202.117.12-1585885770254’
+removed ‘/scratch/sxv5264/32395694/hdfs_data/current/VERSION’
+removed directory: ‘/scratch/sxv5264/32395694/hdfs_data/current’
+removed directory: ‘/scratch/sxv5264/32395694/hdfs_data’
+removed directory: ‘/scratch/sxv5264/32395694/pids’
+removed ‘/scratch/sxv5264/32395694/logs/yarn-sxv5264-nodemanager-comet-16-08.sdsc.edu.out’
+removed ‘/scratch/sxv5264/32395694/logs/hadoop-sxv5264-datanode-comet-16-08.sdsc.edu.out’
+removed ‘/scratch/sxv5264/32395694/logs/hadoop-sxv5264-datanode-comet-16-08.sdsc.edu.log’
+removed directory: ‘/scratch/sxv5264/32395694/logs/userlogs’
+removed ‘/scratch/sxv5264/32395694/logs/spark-sxv5264-org.apache.spark.deploy.worker.Worker-1-comet-16-08.sdsc.edu.out.1’
+removed ‘/scratch/sxv5264/32395694/logs/SecurityAuth-sxv5264.audit’
+removed ‘/scratch/sxv5264/32395694/logs/yarn-sxv5264-nodemanager-comet-16-08.sdsc.edu.log’
+removed ‘/scratch/sxv5264/32395694/logs/spark-sxv5264-org.apache.spark.deploy.worker.Worker-1-comet-16-08.sdsc.edu.out’
+removed directory: ‘/scratch/sxv5264/32395694/logs’
+comet-16-07.ibnet: stopping secondarynamenode
+Copying Hadoop logs back to /home/sxv5264/cometcluster/logs...
+cp: cannot stat ‘/scratch/sxv5264/32395694/logs’: No such file or directory
+removed directory: ‘/tmp/Jetty_comet.16.07_ibnet_50090_secondary____cl3l8n/.active’
+removed directory: ‘/tmp/Jetty_comet.16.07_ibnet_50090_secondary____cl3l8n/jsp’
+removed directory: ‘/tmp/Jetty_comet.16.07_ibnet_50090_secondary____cl3l8n’
+removed directory: ‘/tmp/Jetty_0_0_0_0_50070_hdfs____w2cu08/.active’
+removed directory: ‘/tmp/Jetty_0_0_0_0_50070_hdfs____w2cu08/jsp’
+removed directory: ‘/tmp/Jetty_0_0_0_0_50070_hdfs____w2cu08’
+removed directory: ‘/tmp/Jetty_0_0_0_0_50075_datanode____hwtdwq_7756142071464284025/.active’
+removed directory: ‘/tmp/Jetty_0_0_0_0_50075_datanode____hwtdwq_7756142071464284025/jsp’
+removed directory: ‘/tmp/Jetty_0_0_0_0_50075_datanode____hwtdwq_7756142071464284025’
